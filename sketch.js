@@ -20,7 +20,7 @@ let barX = 340;
 
 function setup() {
   cv = createCanvas(windowWidth, windowHeight);
-  cv.parent('p5Container');
+  //cv.parent('p5Container');
 
   fontRegular = loadFont('assets/ChakraPetch-Regular.ttf');
   fontItalic = loadFont('assets/ChakraPetch-Italic.ttf');
@@ -329,7 +329,7 @@ function windowResized() {
 }
 
 function mousePressed() {
-  pg.fill(255, 60, 30);
+  fill(255, 60, 30);
 
   if (mouseX >= width - 150 && mouseX <= width - 150 + 35) {
     if (mouseY >= 100 && mouseY <= 100 + 50) {
