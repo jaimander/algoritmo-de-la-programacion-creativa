@@ -125,9 +125,14 @@ function draw() {
       textStartY2 + 440
     );
     text(
-      'vi. The results you achieve will depend on your creativity, practice time and whether inspiration finds you programming.',
+      'vi. Most of the time it is about solving problems and making something work, so tolerating frustration can make the difference.',
       500,
       textStartY2 + 460
+    );
+    text(
+      'vii. The results you achieve will depend on your creativity, practice time and whether inspiration finds you programming.',
+      500,
+      textStartY2 + 480
     );
   }
 
@@ -189,9 +194,14 @@ function draw() {
       textStartY2 + 440
     );
     text(
-      'vi. Los resultados que logres dependerán de tu creatividad, el tiempo de práctica y de que la inspiración te encuentre programando.',
+      'vi. La mayor parte del tiempo se trata de resolver problemas y hacer que algo funcione, así que tolerar la frustración puede hacer la diferencia.',
       500,
       textStartY2 + 460
+    );
+    text(
+      'vii. Los resultados que logres dependerán de tu creatividad, el tiempo de práctica y de que la inspiración te encuentre programando.',
+      500,
+      textStartY2 + 480
     );
   }
 
