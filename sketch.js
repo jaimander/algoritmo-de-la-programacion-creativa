@@ -21,19 +21,26 @@ let language = 'ES';
 let cv;
 let barX = 340;
 
+
 function setup() {
   cv = createCanvas(windowWidth, windowHeight);
   //cv.parent('p5Container');
+  setAttributes('antialias', true);
 
   fontRegular = loadFont('assets/ChakraPetch-Regular.ttf');
   fontItalic = loadFont('assets/ChakraPetch-Italic.ttf');
   fontSemiBold = loadFont('assets/ChakraPetch-SemiBold.ttf');
-  fontMono = loadFont('assets/IBMPlexMono-Light.ttf');
-}
+  fontMono = loadFont('assets/IBMPlexMono-Light.ttf')
+ 
+  }
+
 
 function draw() {
   background(80);
   textFont(fontRegular);
+
+  fill(190, 255, 0);
+  
 
   // textos
   fill(190, 255, 0);
@@ -73,21 +80,43 @@ function draw() {
   textAlign(RIGHT);
 
   if (language == 'EN') {
-    text('playfulAttitude', 220, textStartY);
+    if(keyIsDown(81) || keyIsDown(87)){
+      fill(190, 255, 0);
+    }
+    else{
+      fill(255);
+    }
+    text('playfulAttitude*', 220, textStartY);
+    fill(255);
     text('flowState', 220, textStartY + 30);
     text('attention', 220, textStartY + 60);
     text('curiosity', 220, textStartY + 90);
-    text('coding', 220, textStartY + 120);
+    if(keyIsDown(80)){
+      fill(190, 255, 0);
+    }
+    else{
+      fill(255);
+    }
+    text('coding*', 220, textStartY + 120);
+    fill(255);
     text('practiceTime', 220, textStartY + 150);
     text('serendipity', 220, textStartY + 180);
-    text('frustrationTolerance', 220, textStartY + 210);
+    if(keyIsDown(69) || keyIsDown(82)){
+      fill(190, 255, 0);
+    }
+    else{
+      fill(255);
+    }
+
+    text('frustrationTolerance*', 220, textStartY + 210);
+    fill(255);
     text('creativity', 220, textStartY + 240);
     text('creativeCodingOutput', 220, textStartY + 310);
 
     textAlign(LEFT);
     textSize(15);
     textFont(fontSemiBold);
-    text('controls', 50, textStartY2 + 340);
+    text('*controls', 50, textStartY2 + 340);
     textFont(fontRegular);
     text(
       '[K] and [W]: to increase and decrease playfulAttitude.',
@@ -142,14 +171,36 @@ function draw() {
   }
 
   if (language == 'ES') {
-    text('actitudDeJuego', 220, textStartY);
+    if(keyIsDown(81) || keyIsDown(87)){
+      fill(190, 255, 0);
+    }
+    else{
+      fill(255);
+    }
+    text('actitudDeJuego*', 220, textStartY);
+    fill(255);
     text('estadoDeFlujo', 220, textStartY + 30);
     text('atención', 220, textStartY + 60);
     text('curiosidad', 220, textStartY + 90);
-    text('programar', 220, textStartY + 120);
+    if(keyIsDown(80)){
+      fill(190, 255, 0);
+    }
+    else{
+      fill(255);
+    }
+    text('programar*', 220, textStartY + 120);
+    fill(255);
     text('tiempoDePráctica', 220, textStartY + 150);
     text('serendipia', 220, textStartY + 180);
-    text('toleranciaFrustración', 220, textStartY + 210);
+    if(keyIsDown(69) || keyIsDown(82)){
+      fill(190, 255, 0);
+    }
+    else{
+      fill(255);
+    }
+  
+    text('toleranciaFrustración*', 220, textStartY + 210);
+    fill(255);
     text('creatividad', 220, textStartY + 240);
     text('programaciónCreativa', 220, textStartY + 310);
     //textFont(fontSemiBold);
@@ -158,7 +209,7 @@ function draw() {
     textAlign(LEFT);
     textSize(15);
     textFont(fontSemiBold);
-    text('controles', 50, textStartY2 + 340);
+    text('*controles', 50, textStartY2 + 340);
     textFont(fontRegular);
     text(
       '[K] and [W]: aumentar o reducir la actitud de juego.',
