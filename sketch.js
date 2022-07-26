@@ -332,12 +332,12 @@ function keyPressed() {
     }
   }
 
-  if (key == 't' || key == 'T') {
+  if (key == 'r' || key == 'R') {
     if (frustrationTolerance10< 10) {
     frustrationTolerance10 += 1;
   }
   }
-  if (key == 'r' || key == 'R') {
+  if (key == 'e' || key == 'E') {
     if (frustrationTolerance10> 0) {
       frustrationTolerance10 -= 1;  
     }
