@@ -94,7 +94,12 @@ function draw() {
       50,
       textStartY2 + 360
     );
-    text('[P]: to active o deactive coding state.', 50, textStartY2 + 380);
+    text(
+      '[E] and [R]: to increase and decrease frustrationTolerance.',
+      50,
+      textStartY2 + 380
+    );
+    text('[P]: to active o deactive coding state.', 50, textStartY2 + 400);
 
     textFont(fontSemiBold);
     text('description', 500, textStartY2 + 340);
@@ -161,9 +166,14 @@ function draw() {
       textStartY2 + 360
     );
     text(
-      '[P]: activar o desactivar estado de la acción de programar.',
+      '[E] and [R]: aumentar o reducir la tolerancia a la frustración.',
       50,
       textStartY2 + 380
+    );
+    text(
+      '[P]: activar o desactivar estado de la acción de programar.',
+      50,
+      textStartY2 + 400
     );
     textFont(fontSemiBold);
     text('descripción', 500, textStartY2 + 340);
